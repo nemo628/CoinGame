@@ -19,6 +19,7 @@ class Player:
         if self.coinOption == winningFlip:
             # print(f"{self.name} win with the flip {self.coinOption}")
             self.__numWins += 1
+            return True
 
     def getNumWins(self):
         return self.__numWins
