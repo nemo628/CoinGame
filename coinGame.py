@@ -37,7 +37,7 @@ class Coin:
         return self.coinOption
 
 
-class coinGame:
+class CoinGame:
     def __init__(self, player1Name, player2Name):
         self.player = list()
         self.player.append(Player(player1Name))
@@ -87,7 +87,7 @@ def getInputTurns():
 def main():
     player1Name, player2Name = "a", "b"  # getInputNames()
     turns = 4  # getInputTurns()
-    game = coinGame(player1Name, player2Name)
+    game = CoinGame(player1Name, player2Name)
     for turn in range(turns):
         game.startGame()
 
